@@ -9,44 +9,53 @@ public class FlamingNinjaStar {
 		int baseSize = 200;		//the size of the black part of the star
 		int flameSize = 130;		//the length of the flaming arms
 		
-		// Make a new robot, and set it's pen down.
-
+		// Make a new robot, and set it's b
 		// Set the robot speed to 100
-		
-		// Set the robot window size to 800 x 800
-
-		//  COUNT. Make another int variable to count how many times the loop has repeated
-		//         Set its start value to zero.
-		
+	Robot 	bob = new Robot();
+	 bob.penDown();
+		// Set the robot window size to 800 x
+	 bob.setWindowSize(800,800);
+		bob.setSpeed(100);
+		int count = 0;
 	       //  LOOP. Start a while loop to repeat all of the code below ONE time (we will change this later)
+while (count < 25) {	
+	bob.setPenColor(250,102,0);	
 
-			   // TURN RIGHT     Turn the robot 1/8 of a circle (hint: 360 degrees will turn a full circle)
-		
-			   // MOVE           Move the robot 64 pixels
 
-			   // TURN LEFT      Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
-			
-			   // DRAW FLAME     Move the robot the distance in the variable flameSize
-			
-				//               Turn the robot 170 degrees
-			
-				//               Move the robot the distance in the variable flameSize (again)
-			
-			   // TURN RIGHT     Turn the robot 64 degrees to the right
-			
-				// MOVE         Move the robot the distance in the variable baseSize
+	bob.turn(360/8);
+
+
+	bob.move(64);
+		   // MOVE           Move the robot 64 pixels
+	bob.turn(-40);
+		   // TURN LEFT      Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
+	bob.move(flameSize);		
+
+	bob.turn(170);		   
+// DRAW FLAME     Move the robot the distance in the variable flameSize
+	bob.move(flameSize);		
+			//               Turn the robot 170 degrees
+	bob.turn(64);		
+	bob.setPenColor(0,0,0);		//               Move the robot the distance in the variable flameSize (again)
+	bob.move(baseSize);		
+	  // TURN RIGHT     Turn the robot 64 degrees to the right
+	count += 1;	
+	bob.setPenColor(250,102,0);		
+}
+
+	}				// MOVE         Move the robot the distance in the variable baseSize
 		
 				//  INCREASE COUNT. Increase the count by 1
 		
-		//  End the while loop here
-		
+}	//  End the while loop here
+
 		// TEST   Run the program. Check that your shape is the same as the first picture in the recipe. 
-		//        This is one arm of the ninja star.
+		//        This is one arm star.
 		
 		// COLOR  Change the Robot's pen color so that the flame is a different color to the rest of the star.
 		//        Run the program again. Check the second picture in the recipe.
 
 		// LOOP   When you have one arm looking right, change your loop to repeat 25 times and run the program.
 		
-	}
-}
+	
+

@@ -20,31 +20,21 @@ bob.setSpeed(100);
 		//  COLOR. Set the pen to a color that you like for the shape
 bob.setPenColor(0,0,0);
 		//  NUMBER OF SIDES. Make an int variable for the number of sides the shape will have.
-		//  				(Hint: its called PentagonCrazy)
-int PentagonCrazy = 5;
+int pentagoncrazy = 5;		//  				(Hint: its called PentagonCrazy)
+int angle = 72;
 		//  TURN ANGLE. Make another int variable for the angle the robot must turn. 
 	//  			Hint: Divide 360 by the number of sides the shape has to get the angle.
-		bob.turn(360/PentagonCrazy);
+		
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
 int count = 0;
 		//  LOOP. Start a while loop to repeat the DRAW, TURN, and INCREASE COUNT code 200 times. 
-		while (count<200) {
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		}
+
+	while (count < 2000) {
+		bob.move(count);
+		bob.turn(angle + 1);
+		count +=1;
+	}
 		
 				//  DRAW.  Make the robot move the amount in your count variable
 		
