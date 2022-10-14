@@ -19,17 +19,17 @@ Robot bob=new Robot();
 		
 		
 		// Make the robot go as fast as possible
-		bob.setSpeed(1000);
+		bob.setSpeed(100);
 		// Make a variable to hold the length of the triangle and set it to 50
 		int size = 50;
 		// Make another variable to count how many triangles have been drawn and set it to 0
 int count = 0;
 		// Start a while loop to draw 60 triangles
-while (count < 60) {
+while (count < 6000) {
 				//  Change the color of the pen to a random color
 		bob.setRandomPenColor();
 				//  Increase the length variable by 10
-		size +=10;
+		size +=1;
 				//  Call the drawTriangle() method using the length variable
 		drawTriangle(size);
 				//  Turn the robot 6 degrees to the right
